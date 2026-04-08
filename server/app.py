@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from env import ClinicalTrialEnv, Action
@@ -40,3 +41,9 @@ def get_state():
 @app.get("/")
 def health():
     return {"status": "ok", "env": "clinical-trial-optimizer"}
+
+def main():
+    uvicorn.run("server.app:app", host="0.0.0.0", port=8000)
+
+if __name__ == "__main__":
+    main()
