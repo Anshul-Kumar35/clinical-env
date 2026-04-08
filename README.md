@@ -1,3 +1,19 @@
+---
+title: Clinical Trial Optimizer
+emoji: 🧬
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+tags:
+  - openenv
+  - reinforcement-learning
+  - medical-ai
+  - llm-agent
+  - fastapi
+  - docker
+---
+
 # AI Clinical Trial Optimizer
 
 **A Meta PyTorch OpenEnv Hackathon Submission**
@@ -62,7 +78,7 @@ python inference.py
 
 ## 📈 Baseline Scores (seed=42, gpt-3.5-turbo, temperature=0.0)
 
-| Task   | Grader Score | Notes                          |
+| Task   | Grader Score | Notes                         |
 |--------|-------------|--------------------------------|
 | Easy   | 1.00        | Standard cohort, 3 patients    |
 | Medium | 1.00        | Vulnerable cohort, 5 patients  |
