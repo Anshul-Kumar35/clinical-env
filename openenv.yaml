@@ -1,0 +1,15 @@
+name: clinical_trial_optimizer
+version: 1.0
+description: >
+  A simulated clinical trial environment requiring an agent to adjust treatment
+  dosage to maximize recovery and minimize side effects across 3 distinct patient cohort tasks.
+actions:
+  - run_bloodwork
+  - increase_dosage
+  - decrease_dosage
+  - hold_dosage
+  - stop_trial
+difficulty_levels:
+  - easy
+  - medium
+  - hard
