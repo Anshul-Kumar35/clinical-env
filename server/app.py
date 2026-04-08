@@ -36,3 +36,7 @@ def step_env(action_req: Action):
 @app.get("/state")
 def get_state():
     return env_instance.state().model_dump()
+
+@app.get("/")
+def health():
+    return {"status": "ok", "env": "clinical-trial-optimizer"}
