@@ -2,6 +2,9 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from env import ClinicalTrialEnv, Action
 
+app = FastAPI()
+env = ClinicalTrialEnv()
+
 app = FastAPI(title="Clinical Trial Env API")
 env_instance = ClinicalTrialEnv(seed=42)
 
