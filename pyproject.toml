@@ -1,0 +1,19 @@
+[project]
+name = "clinical-trial-optimizer"
+version = "0.1.0"
+description = "AI Clinical Trial Optimizer for OpenEnv Hackathon"
+authors = [
+    { name = "Anshul Kumar" }
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "openai"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
